@@ -1,0 +1,365 @@
+<div class="row">
+    <div class="col-12 col-md-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-10">
+        <div class="topHead row">
+            <div class="col-12" style="text-align: right; margin-top: 0.5em;">
+                <a href=""><span style="font-size: 12px; padding-right: 1em; color: #18385c;">LogOut</span></a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                </svg>
+                <select id="user" style="width:80px; height: 28px; border: none; font-size: 10px;margin-left: 1em;">
+                    <option value="Jhon Doe" selected>Jhon Doe</option>
+                    <option value="">....</option>
+                </select>
+                <img style="width: 2em; height: 2em;" src="../../../../../assets/images/Dr.John.jpg">
+            </div>
+        </div>
+        <div class="row container">
+            <div class="top-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                <div class="row">
+                    <div class="col-1 mt-3">
+                        <img style="width: 80px; height: 80px; border-radius: 50%;" src="../../../../../assets/images/patient.jpg">
+                    </div>
+                    <div class="col-2 mt-3">
+                        <div class="name mt-2">Daneil Mathew</div>
+                        <div class="tel mt-2">Tel: 845-965-9655</div>
+                        <div class="media mt-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3895D3" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
+                                    </svg>
+                                </div>
+                                <div class="verticalLineSmall col-1"></div>
+                                <div class="col-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3895D3" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    </svg>
+                                </div>
+                                <div class="verticalLineSmall col-1"></div>
+                                <div class="col-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3895D3" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 mt-3">
+                        <div class="addAppointmentContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3895D3" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                            <div class="mt-2">Book New</div>
+                        </div>
+                    </div>
+                    <div class="col-2 mt-3 infoPos">
+                        <div class="opacityHead">Info</div>
+                        <div class="dob mt-3">
+                            36 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3895D3" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+                            </svg> SEP 12, 1996
+                        </div>
+                        <div class="dob mt-2">
+                            167 cm <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                                <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
+                              </svg> <span style="font-size: 12px;">O+</span>
+                        </div>
+                    </div>
+                    <div class="col-1 mt-3 verticalLineBig"></div>
+                    <div class="col-1 mt-3 alignHead">
+                        <div class="opacityHead">Allergies</div>
+                        <div class="headContent mt-3">Pencilin</div>
+                    </div>
+                    <div class="col-1 mt-3 verticalLineBig"></div>
+                    <div class="col-2 mt-3 alignHead">
+                        <div class="opacityHead">Active Issues</div>
+                        <div class="headContent mt-3">-</div>
+                    </div>
+                    <div class="col-1 mt-3 verticalLineBig"></div>
+                    <div class="col-2 mt-3 alignHead">
+                        <div class="opacityHead">Medical Problems</div>
+                        <div class="headContent mt-3">Asthama, Hand Injury</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div class="containerHeading">Appointments/ Consultations</div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 cardContainer">
+                        <div class="cardHead">Symptoms History</div>
+                        <div class="horzLine"></div>
+                        <div class="scrollCardContainer">
+                            <div class="row cardPos">
+                                <div class="col-6 symptom">
+                                    Blood in urine
+                                </div>
+                                <div class="col-2">
+                                    <div class="numberCircle">5</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="displayOptions">
+                                        Show <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="editPos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3895D3" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg>&nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row cardPos">
+                                <div class="col-6 symptomShow">
+                                    Diabities
+                                </div>
+                                <div class="col-2">
+                                    <div class="numberCircle">2</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="displayOptions">
+                                        Hide <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                          </svg>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="editPos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3895D3" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg>&nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="extraInfo">250 Diabetes/ Diabetes mellitus</div>
+                                    <div class="extraInfo infoOpacity">Dr. Ajay, Dr. Arya</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row cardPos">
+                                <div class="col-6 symptom">
+                                    Blood in urine
+                                </div>
+                                <div class="col-2">
+                                    <div class="numberCircle">5</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="displayOptions">
+                                        Show <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="editPos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3895D3" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg>&nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row cardPos">
+                                <div class="col-6 symptom">
+                                    Blood in urine
+                                </div>
+                                <div class="col-2">
+                                    <div class="numberCircle">5</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="displayOptions">
+                                        Show <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="editPos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3895D3" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg>&nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row cardPos">
+                                <div class="col-6 symptom">
+                                    Blood in urine
+                                </div>
+                                <div class="col-2">
+                                    <div class="numberCircle">5</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="displayOptions">
+                                        Show <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="editPos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3895D3" class="bi bi-pencil" viewBox="0 0 16 16">
+                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                        </svg>&nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="red" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 cardContainer">
+                        <div class="cardHead">Appointment History</div>
+                        <div class="horzLine"></div>
+                        <div class="scrollCardContainer">
+                            <div class="doctorCard">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="../../../../../assets/images/Dr.John.jpg" style="height: 50px; width: 50px; border-radius: 50%;">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="drName"><img src="../../../../../assets/images/stethoscope_2.png" style="height: 20px; width: 20px; border-radius: 100%;">Dr. Ajay</div>
+                                        <div class="drSp">Heart Specialist, Neurologist</div>
+                                    </div>
+                                    <div class="col-1 verticalLineMedium"></div>
+                                    <div class="col-1 apCLock">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="col-2 drAP">
+                                        <div class="drApTime">13.45</div>
+                                        <div class="drDate">Today</div>
+                                    </div>
+                                    <div class="col-12 mt-3 mb-3">
+                                        <div class="row">
+                                            <div class="col-1" style="margin-left: 50px; margin-top: 5px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="gray" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="col-8" style="font-size: 12px;">
+                                                Patient encountered chest pain morning during jogging for an hour!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doctorCard">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="../../../../../assets/images/Dr.John.jpg" style="height: 50px; width: 50px; border-radius: 50%;">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="drName"><img src="../../../../../assets/images/stethoscope_2.png" style="height: 20px; width: 20px; border-radius: 100%;">Dr. ARYA</div>
+                                        <div class="drSp">Heart Specialist, Neurologist</div>
+                                    </div>
+                                    <div class="col-1 verticalLineMedium"></div>
+                                    <div class="col-1 apCLock">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="col-2 drAP">
+                                        <div class="drApTime">13.45</div>
+                                        <div class="drDate">Today</div>
+                                    </div>
+                                    <div class="col-12 mt-3 mb-3">
+                                        <div class="row">
+                                            <div class="col-1" style="margin-left: 50px; margin-top: 5px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="gray" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="col-8" style="font-size: 12px;">
+                                                Patient encountered chest pain morning during jogging for an hour!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 cardContainer smallCard">
+                        <div class="cardHead">Prescription History</div>
+                        <div class="horzLine"></div>
+                        <div class="scrollCardContainer">
+                            <div class="doctorCard">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="diseaseName">Viral Fever</div>
+                                    </div>
+                                    <div class="col-1 verticalLineVerySmall"></div>
+                                    <div class="col-4">
+                                        <div class="date"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-calendar2-week-fill" viewBox="0 0 16 16">
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM3 10.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                                          </svg>12/10/2021 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                                          </svg></div>
+                                    </div>
+                                </div>
+                                <div class="detailsHead">Date & Time</div>
+                                <div class="extraInfo infoOpacity nextPos">12/10/2021 10:45</div>
+                                <hr>
+                                <div class="detailsHead">Medicines</div>
+                                <div class="extraInfo infoOpacity nextPos">Painkiller, Paracetamole 1500mg IV Q12 Horse X3 days...</div>
+                                <br><br><br><br>
+                            </div>
+                            <div class="doctorCard">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="diseaseName">Head Ache</div>
+                                    </div>
+                                    <div class="col-1 verticalLineVerySmall"></div>
+                                    <div class="col-4">
+                                        <div class="date"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-calendar2-week-fill" viewBox="0 0 16 16">
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM3 10.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                                          </svg>12/10/2021 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                                          </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

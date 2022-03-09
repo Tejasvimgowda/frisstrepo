@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col-12 col-md-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-12 col-md-10">
+        <div class="topHead">
+            <div class="row">
+                <div class="col-md-3 col-xl-3 col-xs-4 col-12" style="color: black; font-size: 25px; font-weight: bolder;margin-top: 0.2em;">
+                    Appointments
+                </div>
+                <div class="col-md-2 col-xl-2 col-xs-4 col-12" style="margin-top: 0.5em;">
+                    <div class="selectOptions">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <select id="location" style="width:80%; height: 30px; border: none; font-size: 12px;">
+                          <option value="St. Marry Clinic" selected>St. Marry Clinic</option>
+                          <option value="">....</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xl-2 col-xs-4 col-12" style="margin-top: 0.5em;">
+                    <div class="selectOptions">
+                        <i class="fas fa-stethoscope"></i>								
+                        <select id="doctor" style="width:80%; height: 30px; border: none; font-size: 12px;">
+                            <option value="Jhon Doe" selected>Jhon Doe</option>
+                            <option value="">....</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xl-2 col-xs-4 col-12" style="margin-top: 0.5em;">
+                    <div style="color: blue; font-style: italic; font-size: 12px; padding-top: 0.6em;">
+                        <li>New Appointment</li>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-xl-3 col-xs-4 col-12" style="text-align: right; margin-top: 0.5em;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                    </svg>
+                    <select id="user" style="width:80px; height: 28px; border: none; font-size: 10px;margin-left: 1em;">
+                        <option value="Jhon Doe" selected>Jhon Doe</option>
+                        <option value="logout">LogOut</option>
+                    </select>
+                    <img style="width: 2em; height: 2em;" src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-8">
+
+                </div>
+                <div class="col-md-2 col-4 buttonPosition">
+                    <div class="closeAppointmentButton">Close Appointment</div>
+                </div>
+                <div class="col-md-6 col-12 margin">
+                    <app-view-appointment-patient-details></app-view-appointment-patient-details>
+                </div>
+                <div class="col-md-6 col-12 margin">
+                    <app-view-appointment-doctor-details></app-view-appointment-doctor-details>
+                </div>
+                <div class="col-md-12 col-12 margin">
+                    <app-view-edit-appointment-comments></app-view-edit-appointment-comments>
+                </div>
+                <div class="col-md-6 col-12 margin">
+                    <app-view-appointment-recommendations></app-view-appointment-recommendations>
+                </div>
+                <div class="col-md-6 col-12 margin">
+                    <app-view-edit-appointment-vitals></app-view-edit-appointment-vitals>
+                </div>
+                <div class="col-md-6 col-12 margin">
+                    <app-view-all-prescriptions></app-view-all-prescriptions>
+                </div>
+                <div class="col-md-6 col-12 margin">
+                    <app-view-appointment-test></app-view-appointment-test>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

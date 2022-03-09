@@ -1,0 +1,157 @@
+<div class="row">
+    <div class="col-12 col-md-2">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-12 col-md-10">
+        <div class="topHead">
+            <div class="row">
+                <div class="col-md-3 col-xl-3 col-xs-4 col-12" style="color: black; font-size: 25px; font-weight: bolder;margin-top: 0.2em;">
+                    Appointments
+                </div>
+                <div class="col-md-2 col-xl-2 col-xs-4 col-12" style="margin-top: 0.5em;">
+                    <div class="selectOptions">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <select id="location" style="width:80%; height: 30px; border: none; font-size: 12px;">
+                          <option value="St. Marry Clinic" selected>St. Marry Clinic</option>
+                          <option value="">....</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xl-2 col-xs-4 col-12" style="margin-top: 0.5em;">
+                    <div class="selectOptions">
+                        <i class="fas fa-stethoscope"></i>								
+                        <select id="doctor" style="width:80%; height: 30px; border: none; font-size: 12px;">
+                            <option value="Jhon Doe" selected>Jhon Doe</option>
+                            <option value="">....</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xl-2 col-xs-4 col-12" style="margin-top: 0.5em;">
+                    <div style="color: blue; font-style: italic; font-size: 12px; padding-top: 0.6em;">
+                        <li>New Appointment</li>
+                    </div>
+                    
+                </div>
+                <div  (click)="logOutApplication(select.value)" class="col-md-3 col-xl-3 col-xs-4 col-12" style="text-align: right; margin-top: 0.5em;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                    </svg>
+                    <select id="user" #select style="width:80px; height: 28px; border: none; font-size: 10px;margin-left: 1em;">
+                        <option value="Jhon Doe" selected>Jhon Doe</option>
+                        <option value="logout">LogOut</option>
+                    </select>
+                    <img style="width: 2em; height: 2em;" src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <span class="titleHeaders">Accepted Appointments</span>
+                        <div class="mt-1">
+                            <span class="count">{{appointmentSummary[0].accpeted}}</span>
+                            <span class="day">Today</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <span class="titleHeaders">Total Appointments</span>
+                        <div class="mt-1">
+                            <span class="count">{{appointmentSummary[0].total}}</span>
+                            <span class="day">Today</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card">
+                        <span class="titleHeaders">Cancelled Appointments</span>
+                        <div class="mt-1">
+                            <span class="count">{{appointmentSummary[0].cancelled}}</span>
+                            <span class="day">Today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row p-0">
+                <div class="col-xl-6 col-md-3 col-sm-6 col-12 heading">
+                    All Appointments
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 col-4 filter">
+                    <label for="filter">Filter:&nbsp;</label>
+                    <select id="filter" style="width:80px; height: 30px; background-color: rgb(236, 236, 248);;">
+                      <option value="all">All</option>
+                      <option value="">....</option>
+                    </select>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-6 col-8 filter">
+                    <div class="addAppoint pt-1">
+                        + New Appointment
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row scrollContainer">
+                <div class="col-md-3 card2" *ngFor="let appointment of allAppointment; let i=index;">
+                    <div class="row" style="margin-top: 0.5em;">
+                        <div class="col-4">
+                            <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg">
+                        </div>
+                        <div class="col-8 mt-2">
+                            <span class="name">{{appointment.patient_name}} ({{appointment.patient_age}})</span>
+                            <div class="row mt-3">
+                                <div class="col-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="skyblue" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="line col-1 mt-1">
+                                    <div class="vL"></div>
+                                </div>
+                                <div class="col-3 call">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="skyblue" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    </svg>
+                                </div>
+                                <div class="line col-1 mt-1">
+                                    <div class="vL"></div>
+                                </div>
+                                <div class="col-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="skyblue" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="apTime">{{appointment.appointment_time}}</div>
+                            <div class="apDate">{{appointment.appointment_date}}</div>
+                        </div>
+                        <div class="line2 col-1 mt-1">
+                            <div class="vL2"></div>
+                        </div>
+                        <div class="col-7 apIssue">
+                            {{appointment.patient_issue}}
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6 details" (click)="viewAppointment()">
+                            View Details
+                        </div>
+                        <div class="col-6 details">
+                            View Feedback
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,240 @@
+
+.titleHeaders{
+    font-size: 14px;
+    color: #18385c;
+}
+.topHead{
+    margin-left: 0.1em;
+    width: 100%;
+    padding: 0.5em;
+    padding-right: 1.5em;
+    background-color: white;
+    height: fit-content;
+    margin-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navbar1{
+    color: white;
+    background: #18385c;
+    padding: 1em;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0.5em;
+    margin-right: -1em;
+    margin-top: 1em;
+}
+.inActive{
+    color: white;
+    font-size: 15px;
+    margin-top: 1.5em;
+}
+.rotate{
+    transform: rotate(270deg);
+}
+
+img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-left: 0.8em;
+}
+.container{
+    background-color: rgb(236, 236, 248);
+    margin-left: 0.1em;
+    width: 100%;
+    padding: 0;
+}
+.top-container{
+    background-color: white;
+    padding-bottom: 3em;
+}
+.name{
+    font-size: 20px;
+    font-weight: 800;
+}
+.tel{
+    opacity: 0.5;
+}
+.media{
+    padding-left: 0.69em;
+}
+.verticalLineSmall{
+    border-left: 1px solid gray;
+    height: 20px;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    opacity: 0.2;
+}
+.verticalLineVerySmall{
+    border-left: 1px solid gray;
+    height: 15px;
+    opacity: 0.2;
+    width: 1px;
+}
+.verticalLineBig{
+    border-left: 1px solid gray;
+    height: 80px;
+    opacity: 0.5;
+    width: 20px;
+}
+.verticalLineMedium{
+    border-left: 1px solid gray;
+    height: 30px;
+    opacity: 0.5;
+    width: 20px;
+    margin-top: 5px;
+}
+.horzLine{
+    border-bottom: 1px solid black;
+}
+.addAppointmentContainer{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+    text-align: center;
+    padding-top: 0.5em;
+    border-radius: 5px;
+    padding-bottom: 0.5em;
+    margin-top: 2em;
+}
+.infoPos{
+    margin-right: 1em;
+}
+.opacityHead{
+    opacity: 0.5;
+    font-size: 15px;
+}
+.dob{
+    font-size: 18px;
+}
+.headContent{
+    font-size: 16px;
+}
+.alignHead{
+    text-align: center;
+}
+.bottom-container{
+    margin-left: 2em;
+    height: max-content;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.containerHeading{
+    font-size: 20px;
+}
+.cardContainer{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    height: 22.8em;
+    width: 400px;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+.smallCard{
+    width: 250px;
+}
+.scrollCardContainer{
+    overflow-y: auto;
+    height: 19em;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+  }
+  .scrollCardContainer::-webkit-scrollbar {
+    /* Chrome */
+    display: none;
+  }
+.cardHead{
+    margin-top: 0.5em;
+    font-size: 20px;
+    color: #3895D3;
+}
+.numberCircle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font: 12px Arial, sans-serif;
+    margin-top: 0.1em;
+}
+.cardPos{
+    margin-top: 1em;
+    padding-left: 1em;
+    margin-bottom: -0.5em;
+}
+.displayOptions{
+    font-size: 12px;
+}
+.editPos{
+    margin-top: -0.8em;
+    text-align: center;
+}
+.symptom{
+    font-size: 15px;
+    font-weight: 600;
+}
+.symptomShow{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -0.4em;
+}
+.extraInfo{
+    font-size: 12px;
+    padding-left: 0.5em;
+    font-weight: 500;
+}
+.infoOpacity{
+    opacity: 0.5;
+}
+.doctorCard{
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 0.5em;
+}
+.drName{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.drSp{
+    font-size: 10px;
+    opacity: 0.5;
+    padding-left: 15px;
+    margin-top: 2px;
+    font-style: italic;
+}
+.apCLock{
+    padding-top: 10px;
+}
+.drApTime{
+    font-weight: bold;
+}
+.drDate{
+    font-size: 10px;
+    opacity: 0.5;
+}
+.diseaseName{
+    margin-left: 12px;
+    font-size: 15px;
+}
+.date{
+    font-size: 10px;
+    margin-left: -12px;
+    margin-right: -5px;
+}
+.detailsHead{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+.nextPos{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
